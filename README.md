@@ -2,6 +2,8 @@
 
 The OpenAI GPT-3.5 Translator Chrome Extension brings seamless translation of selected web page text using the powerful GPT-3.5-turbo model. With its user-friendly interface, rapid performance, and top-notch translation quality, this extension enhances your browsing experience.
 
+<img width="455" alt="Screenshot 2023-08-15 at 23 06 16" src="https://github.com/ardakaraosmanoglu/gpt-translate/assets/77415587/67f55714-557a-4f3c-811f-5fc73b0c861e">
+
 ### Key Features
 - Effortlessly translate selected text within web pages.
 - Multilingual support for diverse target languages.
