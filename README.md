@@ -32,9 +32,7 @@ The OpenAI GPT-3.5 Translator Chrome Extension brings seamless translation of se
 ### Licensing
 This project is governed by the MIT License. For in-depth information, refer to the LICENSE file.
 
-### Turkish
-
-## OpenAI GPT-3.5 Çeviri Chrome Eklentisi
+## [Turkish] OpenAI GPT-3.5 Çeviri Chrome Eklentisi
 
 OpenAI GPT-3.5 Çeviri Chrome Eklentisi, OpenAI'nin güçlü GPT-3.5-turbo modelini kullanarak seçilen web sayfası metnini sorunsuzca çevirmenizi sağlar. Kullanıcı dostu arayüzü, hızlı performansı ve üstün çeviri kalitesi ile bu eklenti, gezinme deneyiminizi güçlendirir.
 
