@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    // API key form submission
+    document.getElementById("apiKeyForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // API key handling code here
+    });
+    
+    // Translation form submission
+    document.getElementById("translateForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // Translation code here
+    });
+    
+    // Check if a language is stored in localStorage
+    const storedLanguage = localStorage.getItem("selectedLanguage");
+    if (storedLanguage) {
+      // Set the stored language as the selected option
+      document.getElementById("targetLanguage").value = storedLanguage;
+    }
+    
+    // Listen for changes in the language selection
+    document.getElementById("targetLanguage").addEventListener("change", function(event) {
+      const selectedLanguage = event.target.value;
+      // Store the selected language in localStorage
+      localStorage.setItem("selectedLanguage", selectedLanguage);
+    });    
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>GPT-3.5 Translator</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo">GPT-3.5 Translator by Raxana.NET</h1>
+  </header>
+
+  <main>
+    <section id="api-key-container" class="container">
+      <h2>Enter API Key</h2>
+      <form id="apiKeyForm" class="form">
+        <input type="text" id="apiKeyInput" class="input" placeholder="Enter your API key">
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </section>
+
+    <section id="translation-container" class="container hidden">
+      <form id="translateForm" class="form">
+        <textarea id="inputText" class="input" placeholder="Enter the text you want to translate"></textarea>
+        <select id="targetLanguage" class="select"></select>
+        <button type="submit" id="translateButton" class="button">Translate</button>
+      </form>
+      <div id="result" class="result"></div>
+      <button id="copyButton" class="button hidden">Copy</button>
+    </section>
+  </main>
+
+  <footer>
+    <script src="api.js"></script>
+    <script src="popup.js"></script>
+  </footer>
+</body>
+</html>
